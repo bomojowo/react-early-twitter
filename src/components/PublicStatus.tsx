@@ -13,4 +13,4 @@ function PublicStatus(): JSX.Element {
   );
 }
 
-export default PublicStatus
+export default PublicStatus;
