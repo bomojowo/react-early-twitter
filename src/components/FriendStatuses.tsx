@@ -29,45 +29,66 @@ function FriendStatuses(): JSX.Element {
           emoji={"◻️"}
           timeAgo={{ n: 19, unit: "minutes" }}
         />
-        <li>
-          ⭐ <a href="#">drx</a>: chatting in gmail w/Jack
-          <small>31 minutes ago</small>
-        </li>
-        <li>
-          ⭐ <a href="#">biz</a>: having some coffee
-          <small>36 minutes ago</small>
-        </li>
-        <li>
-          ⭐ <a href="#">Florian</a>: Preparing a pizza
-          <small>about 3 hours ago</small>
-        </li>
-        <li>
-          ⭐ <a href="#">Courtney</a>: multi-tasking audio debug audio coding
-          <small>about 8 hours ago</small>
-        </li>
-        <li>
-          ◻️ <a href="#">Jack</a>: fantasizing about jack drawing naked people
-          mmmmmmmmmmmmm..... naked people. <small>about 21 hours ago</small>
-        </li>
-        <li>
-          ⭐ <a href="#">noah</a>: Oh crap, I think I might be getting that f'in
-          cold' <small>about 21 hours ago</small>
-        </li>
-        <li>
-          ⭐ <a href="#">asruge</a>: put some rss on my mp3
-          <small>about 22 hours ago</small>
-        </li>
-        <li>
-          ⭐ <a href="#">crystal</a>: in the musicals <small>1 day ago</small>
-        </li>
-        <li>
-          ◻️ <a href="#">Tim Roberts</a>: setting up my mac mini
-          <small>1 day ago</small>
-        </li>
-        <li>
-          ◻️ <a href="#">4153738157</a>: just setting up my twttr
-          <small>1 day ago</small>
-        </li>
+        <StatusItem
+        username={"drx"}
+        content={"chatting in gmail w/Jack"}
+        emoji={"⭐"}
+        timeAgo={{ n:31, unit: "minutes" }}
+        />
+        <StatusItem
+        username={"biz"}
+        content={"having some coffee"}
+        emoji={"⭐"}
+        timeAgo={{ n:36, unit: "minutes" }}
+        />
+        <StatusItem
+        username={"Florian"}
+        content={"Preparing a pizza"}
+        emoji={"⭐"}
+        timeAgo={{ n:3, unit: "hours" }}
+        />
+        <StatusItem
+        username={"Courtney"}
+        content={"multi-tasking audio debug audio coding"}
+        emoji={"⭐"}
+        timeAgo={{ n:8, unit: "hours" }}
+        />
+       <StatusItem
+        username={"Jack"}
+        content={"fantasizing about jack drawing naked people mmmmmmmmmmmmm..... naked people."}
+        emoji={"⭐"}
+        timeAgo={{ n:21, unit: "hours" }}
+        />
+        <StatusItem
+        username={"noah"}
+        content={"Oh crap, I think I might be getting that f'in cold"}
+        emoji={"⭐"}
+        timeAgo={{ n:21, unit: "hours" }}
+        />
+       <StatusItem
+        username={"asruge"}
+        content={"put some rss on my mp3"}
+        emoji={"⭐"}
+        timeAgo={{ n:22, unit: "hours" }}
+        />
+         <StatusItem
+        username={"crystal"}
+        content={"in the musicals"}
+        emoji={"⭐"}
+        timeAgo={{ n:1, unit: "days" }}
+        />
+        <StatusItem
+        username={"Tim Roberts"}
+        content={"setting up my mac mini"}
+        emoji={"◻️"}
+        timeAgo={{ n:1, unit: "days" }}
+        />
+        <StatusItem
+        username={"4153738157"}
+        content={"just setting up my twttr"}
+        emoji={"◻️"}
+        timeAgo={{ n:1, unit: "days" }}
+        />
       </ol>
     </section>
   );
